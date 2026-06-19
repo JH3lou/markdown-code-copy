@@ -2,7 +2,7 @@
   "name": "markdown-code-copy",
   "displayName": "Markdown Code Copy",
   "description": "Adds a GitHub-style copy button to fenced code blocks in VS Code Markdown Preview. Zero runtime dependencies.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "local",
   "license": "MIT",
   "repository": {
