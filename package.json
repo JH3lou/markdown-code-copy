@@ -1,0 +1,43 @@
+{
+  "name": "markdown-code-copy",
+  "displayName": "Markdown Code Copy",
+  "description": "Adds a GitHub-style copy button to fenced code blocks in VS Code Markdown Preview. Zero runtime dependencies.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JH3lou/markdown-code-copy.git"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "markdown.markdownItPlugins": true,
+    "markdown.previewScripts": [
+      "./media/copy.js"
+    ],
+    "markdown.previewStyles": [
+      "./media/copy.css"
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npm run compile && vsce package",
+    "test": "echo \"No tests configured.\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.0",
+    "@vscode/vsce": "^2.15.0"
+  }
+}

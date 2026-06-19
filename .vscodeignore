@@ -1,0 +1,19 @@
+# Source & build config — only the compiled output in dist/ ships
+src/**
+tsconfig.json
+**/*.map
+
+# Dev tooling, loop scaffolding, and repo meta — not part of the extension
+.claude/**
+.vscode/**
+.gitignore
+.vscodeignore
+AGENTS.md
+CLAUDE.md
+demo.md
+package-lock.json
+images/**
+
+# Anything vsce would otherwise pull in
+node_modules/**
+**/.DS_Store
